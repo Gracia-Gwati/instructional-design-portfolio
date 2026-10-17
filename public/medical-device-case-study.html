@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Learning Design | Portfolio Case Study</title>
+
+    <style>
+        :root {
+            --navy: #153451;
+            --blue: #28649a;
+            --pale-blue: #edf5fd;
+            --text: #526b83;
+            --border: #dce6ef;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            background: #eaf0f6;
+            color: var(--navy);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 11pt;
+            line-height: 1.65;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            margin: 24px auto;
+            padding: 23mm 22mm;
+            background: white;
+            box-shadow: 0 4px 22px #15345112;
+            position: relative;
+            break-after: page;
+        }
+
+        .cover {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            min-height: 297mm;
+            color: white;
+            background: var(--navy);
+        }
+
+        .cover .eyebrow {
+            color: #b8d9f6;
+        }
+
+        .eyebrow {
+            color: var(--blue);
+            font-size: 9pt;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        h1 {
+            margin: 22px 0;
+            font-size: 36pt;
+            line-height: 1.13;
+            letter-spacing: -1.5px;
+        }
+
+        h2 {
+            margin: 12px 0 18px;
+            font-size: 24pt;
+            line-height: 1.2;
+            letter-spacing: -0.7px;
+        }
+
+        h3 {
+            margin: 25px 0 8px;
+            font-size: 14pt;
+        }
+
+        p,
+        li {
+            color: var(--text);
+        }
+
+        .cover p {
+            max-width: 470px;
+            color: #d7e5f2;
+            font-size: 13pt;
+        }
+
+        .cover .footer {
+            color: #b8d9f6;
+        }
+
+        .rule {
+            width: 64px;
+            height: 4px;
+            margin: 25px 0;
+            background: #73b4ed;
+        }
+
+        .meta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+            margin: 30px 0;
+        }
+
+        .meta>div {
+            padding: 16px;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+        }
+
+        .meta strong {
+            display: block;
+            margin-bottom: 5px;
+            color: var(--blue);
+            font-size: 9pt;
+            text-transform: uppercase;
+        }
+
+        .callout {
+            margin: 24px 0;
+            padding: 18px 20px;
+            border-left: 4px solid var(--blue);
+            background: var(--pale-blue);
+        }
+
+        .callout p {
+            margin-bottom: 0;
+        }
+
+        .screen {
+            margin: 20px 0;
+            padding: 22px;
+            border: 1px solid var(--border);
+            border-radius: 7px;
+            break-inside: avoid;
+        }
+
+        .screen-label {
+            color: var(--blue);
+            font-size: 9pt;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .screen h3 {
+            margin-top: 12px;
+        }
+
+        .answer {
+            margin: 8px 0;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: 4px;
+            color: var(--text);
+        }
+
+        .footer {
+            margin-top: 40px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+            color: #7a8ea2;
+            font-size: 9pt;
+        }
+
+        @media print {
+            @page {
+                size: A4;
+                margin: 0;
+            }
+
+            body {
+                background: white;
+                print-color-adjust: exact;
+                -webkit-print-color-adjust: exact;
+            }
+
+            .page {
+                width: 210mm;
+                min-height: 297mm;
+                margin: 0;
+                box-shadow: none;
+                break-after: page;
+            }
+
+            .page:last-child {
+                break-after: auto;
+            }
+        }
+
+        @media screen and (max-width: 700px) {
+            .page {
+                width: 100%;
+                min-height: auto;
+                margin: 0 0 16px;
+                padding: 28px 22px;
+            }
+
+            .cover {
+                min-height: 90vh;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .meta {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="page cover">
+        <div>
+            <div class="eyebrow">Instructional Design Portfolio</div>
+            <div class="rule"></div>
+
+            <h1>From technical content to applied learning.</h1>
+
+            <p>
+                Designing an online learning experience that helps developing
+                medical-device auditors interpret evidence, investigate
+                discrepancies and make defensible decisions.
+            </p>
+        </div>
+
+        <div>
+            <h3>Technical Learning Design</h3>
+            <p>Fictional demonstration case study</p>
+            <p class="footer">
+                This artefact is for demonstration and is not commissioned client work.
+            </p>
+        </div>
+    </section>
+
+    <section class="page">
+        <div class="eyebrow">01 / Project overview</div>
+        <h2>Starting with the learning problem.</h2>
+
+        <p>
+            Technical compliance training often contains dense terminology,
+            regulatory requirements and process documentation. Presenting
+            this information as slides alone may not give learners sufficient
+            opportunity to practise applying it in realistic situations.
+        </p>
+
+        <div class="meta">
+            <div>
+                <strong>Audience</strong>
+                Medical-device auditors in training
+            </div>
+            <div>
+                <strong>Format</strong>
+                Self-paced online learning
+            </div>
+            <div>
+                <strong>Learning need</strong>
+                Apply evidence-based audit reasoning
+            </div>
+            <div>
+                <strong>Prototype scope</strong>
+                Five-screen learning sequence
+            </div>
+        </div>
+
+        <h3>The design challenge</h3>
+        <p>
+            How might technical source material be transformed into an
+            accessible online experience that encourages learners to move
+            beyond recalling information and begin applying it?
+        </p>
+
+        <div class="callout">
+            <strong>Design decision</strong>
+            <p>
+                Use short explanatory content, a realistic fictional discrepancy,
+                guided practice and a scenario-based knowledge check with
+                explanatory feedback.
+            </p>
+        </div>
+
+        <h3>My approach</h3>
+        <p>
+            This demonstration illustrates a proposed instructional design
+            approach. It is not a reproduction of confidential work or a
+            representation of a commissioned client project.
+        </p>
+
+        <div class="footer">Technical Learning Design · Fictional case study</div>
+    </section>
+
+    <section class="page">
+        <div class="eyebrow">02 / Learning design</div>
+        <h2>Define what learners should be able to do.</h2>
+
+        <p>
+            The following objectives are proposed for this fictional module.
+            They would normally be validated against the course requirements,
+            approved technical source material and subject-matter expert input.
+        </p>
+
+        <h3>Learning objectives</h3>
+        <ol>
+            <li>
+                Identify relevant sources of documented evidence during a
+                document-control audit.
+            </li>
+            <li>
+                Compare available evidence against applicable audit criteria.
+            </li>
+            <li>
+                Select an appropriate next investigative action when a
+                documentation discrepancy is identified.
+            </li>
+        </ol>
+
+        <h3>Instructional sequence</h3>
+        <div class="meta">
+            <div>
+                <strong>01 · Explain</strong>
+                Establish relevance and introduce document control.
+            </div>
+            <div>
+                <strong>02 · Explore</strong>
+                Identify evidence an auditor might examine.
+            </div>
+            <div>
+                <strong>03 · Practise</strong>
+                Investigate a fictional discrepancy.
+            </div>
+            <div>
+                <strong>04 · Assess</strong>
+                Select a defensible next action and review feedback.
+            </div>
+        </div>
+
+        <h3>Assessment strategy</h3>
+        <p>
+            A scenario-based question assesses decision-making rather than
+            simple recall. Plausible distractors represent common mistakes,
+            including jumping to conclusions or taking action without
+            documenting the evidence.
+        </p>
+
+        <div class="callout">
+            <strong>Feedback principle</strong>
+            <p>
+                Explain why an answer is appropriate, or what the learner should
+                reconsider, so the assessment also supports learning.
+            </p>
+        </div>
+
+        <div class="footer">Technical Learning Design · Fictional case study</div>
+    </section>
+
+    <section class="page">
+        <div class="eyebrow">03 / Storyboard</div>
+        <h2>Turning the design into screens.</h2>
+
+        <div class="screen">
+            <div class="screen-label">SCREEN 01 · INTRODUCTION</div>
+            <h3>The importance of document control</h3>
+            <p>
+                Auditors need to establish whether personnel are using the
+                correct, approved version of a work instruction.
+            </p>
+            <p><strong>Learner action:</strong> Identify the purpose of document control.</p>
+            <p><strong>Rationale:</strong> Establish relevance before introducing detailed terminology.</p>
+        </div>
+
+        <div class="screen">
+            <div class="screen-label">SCREEN 02 · CONCEPT EXPLORATION</div>
+            <h3>What evidence should an auditor examine?</h3>
+            <ul>
+                <li>Approved document register</li>
+                <li>Revision identifier</li>
+                <li>Approval records</li>
+                <li>Document available at the point of use</li>
+            </ul>
+            <p><strong>Learner action:</strong> Compare the evidence with applicable criteria.</p>
+            <p><strong>Rationale:</strong> Organise information in a scannable checklist.</p>
+        </div>
+
+        <div class="screen">
+            <div class="screen-label">SCREEN 03 · GUIDED PRACTICE</div>
+            <h3>Investigate the discrepancy</h3>
+            <p>
+                An operator is using revision 2 of a work instruction, while
+                the document register identifies revision 3 as approved.
+                The reason for the discrepancy has not yet been established.
+            </p>
+            <p><strong>Learner action:</strong> Identify what needs verification.</p>
+            <p><strong>Rationale:</strong> Introduce uncertainty that requires evidence-based reasoning.</p>
+        </div>
+
+        <div class="footer">Technical Learning Design · Fictional case study</div>
+    </section>
+
+    <section class="page">
+        <div class="eyebrow">04 / Assessment design</div>
+        <h2>Assessing judgement through scenarios.</h2>
+
+        <div class="screen">
+            <div class="screen-label">SCREEN 04 · KNOWLEDGE CHECK</div>
+            <h3>What would you do next?</h3>
+            <p>
+                During a fictional audit, an operator is using revision 2
+                of a work instruction, while the document register identifies
+                revision 3 as approved. You have not established why the
+                discrepancy occurred.
+            </p>
+
+            <p><strong>A.</strong> Declare the entire quality management system non-compliant immediately.</p>
+            <p><strong>B.</strong> Verify the discrepancy, establish the applicable criteria and gather relevant
+                evidence.</p>
+            <p><strong>C.</strong> Replace the instruction without documenting the discrepancy.</p>
+
+            <div class="callout">
+                <strong>Correct response: B</strong>
+                <p>
+                    Verify the document versions, determine the applicable
+                    criteria and establish the facts before deciding whether
+                    an audit finding is justified.
+                </p>
+            </div>
+        </div>
+
+        <h3>Why these distractors?</h3>
+        <p>
+            Option A represents premature judgement. Option C represents
+            action without sufficient investigation or documentation.
+            Option B requires the learner to prioritise evidence and
+            relevant criteria before reaching a conclusion.
+        </p>
+
+        <h3>Accessibility considerations</h3>
+        <ul>
+            <li>Use clear headings and concise instructions.</li>
+            <li>Make interactive controls keyboard accessible.</li>
+            <li>Provide readable colour contrast and visible focus states.</li>
+            <li>Do not rely on colour alone to communicate correctness.</li>
+            <li>Provide feedback in text rather than through visual cues alone.</li>
+        </ul>
+
+        <div class="footer">Technical Learning Design · Fictional case study</div>
+    </section>
+
+    <section class="page">
+        <div class="eyebrow">05 / Evaluation and reflection</div>
+        <h2>How would I evaluate the design?</h2>
+
+        <p>
+            The module would be reviewed before release and evaluated
+            after learners begin using it. The following is a proposed
+            evaluation plan, not a report of measured outcomes.
+        </p>
+
+        <h3>Before launch</h3>
+        <ul>
+            <li>Validate technical accuracy with a qualified subject-matter expert.</li>
+            <li>Check alignment between objectives, content and assessment.</li>
+            <li>Test navigation, keyboard access and mobile layouts.</li>
+            <li>Review question wording and feedback for ambiguity.</li>
+        </ul>
+
+        <h3>After launch</h3>
+        <ul>
+            <li>Review assessment performance against defined success criteria.</li>
+            <li>Identify questions with unexpected response patterns.</li>
+            <li>Gather learner feedback on clarity and relevance.</li>
+            <li>Use findings to prioritise content and interaction improvements.</li>
+        </ul>
+
+        <h3>Reflection</h3>
+        <p>
+            The key design decision is to connect technical concepts to
+            realistic learner decisions. Scenario-based practice provides
+            a bridge between information presented in a module and the
+            reasoning learners may need to apply in practice.
+        </p>
+
+        <div class="callout">
+            <strong>Scope and limitations</strong>
+            <p>
+                This fictional artefact demonstrates design reasoning only.
+                It does not establish regulatory compliance, demonstrate
+                measured learning gains or replace approved technical guidance.
+            </p>
+        </div>
+
+        <div class="footer">Technical Learning Design · Fictional case study</div>
+    </section>
+
+</body>
+
+</html>
